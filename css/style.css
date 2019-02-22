@@ -169,3 +169,17 @@ h1 {
     font-size: 40px;
     font-weight: 600;
 }
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    display: block;
+}
+
+.position {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1085e4;
+    text-transform: uppercase;
+}
