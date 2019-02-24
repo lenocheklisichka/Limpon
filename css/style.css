@@ -66,7 +66,7 @@ h1 {
     color: #1085e4;
 }
 
-.subscribe span  {
+.subscribe  h2 span  {
     font-size: 12px;
     color: #00bffe;
     font-weight: 600;
@@ -77,28 +77,24 @@ h1 {
 .subscribe h2 {
     font-size: 50px;
     font-weight: 600;
-    text-transform: capitalize;
 }
 
 .page-software h2 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
-    text-transform: capitalize;
 }
 
 .amazing dt {
     font-size: 16px;
     font-weight: 600;
     color: #5a6789;
-    text-transform: capitalize;
 }
 
 .page-stat h2 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
-    text-transform: capitalize;
 }
 
 .page-stat h2 span {
@@ -142,7 +138,7 @@ h1 {
     color: #192b59;
 }
 
-.page-screen span {
+.page-screen h2 span {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -157,7 +153,7 @@ h1 {
     text-align: center;
 }
  
-.page-clients span {
+.page-clients h2 span {
     font-size: 18px;
     font-weight: 800;
     color: #85c8ff;
@@ -182,4 +178,92 @@ h1 {
     font-weight: 700;
     color: #1085e4;
     text-transform: uppercase;
+}
+
+.page-plan h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #192b59;
+    text-align: center;
+}
+    
+.page-plan h2 span {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1085e4;
+    display: block;
+    text-align: center;
+}
+
+.box-price-item h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000958;
+    display: block;
+}
+
+.box-price-item p strong{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0084ff;
+}
+
+.box-price-item-activ h3 span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.box-price-item-activ h3 {
+    font-size: 50px;
+    font-weight: 700;
+    display: block;
+}
+
+.box-price-item-activ p strong {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.page-team h3 span {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    color: #85c8ff;
+    text-align: center;
+}
+
+.page-team h3 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.angels {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a88e1;
+    text-transform: uppercase;
+    display: block;
+}
+
+.team {
+    font-size: 26px;
+    font-weight: 600;
+    color: #192b59;
+    display: block;
+} 
+
+.card {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
 }
