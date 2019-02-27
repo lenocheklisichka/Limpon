@@ -32,6 +32,7 @@ h1 {
     font-weight: 600;
     color: #192b59;
     line-height: 1.2;
+    letter-spacing: -1.5px;
 }
  
 .title-h2 span {
@@ -44,6 +45,23 @@ h1 {
     margin-bottom: 22px;
 }
 
+.title-40 {
+    font-size: 40px;
+    letter-spacing: -3.4px; 
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1;
+}
+
+.title-40 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #68a8eb;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
 .page-stat .title-h2 {
     font-size: 40px;
     text-align: center;
@@ -213,7 +231,7 @@ h1 {
 }
 
 .screen {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: -7px;
 }
 
@@ -232,9 +250,10 @@ h1 {
     padding: 116px 0 0 0;
     text-align: center;
 }
- 
-.page-screen .title-h2 {
+
+.page-plan {
     text-align: center;
+    
 }
 
 .page-app h2 {
@@ -295,6 +314,28 @@ h1 {
     color: #1085e4;
     display: block;
     text-align: center;
+}
+
+.box-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-price-item {
+    background-color: #f5faff;
+    flex-basis: 30%;
+}
+
+.box-price-item-activ {
+     background-color: #192b59; 
+     color: #fff;
+     flex-basis: 30%;
+     
+}
+
+.box-price-item ul , .box-price-item-activ ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .box-price-item h3{
