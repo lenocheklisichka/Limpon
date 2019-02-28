@@ -339,40 +339,38 @@ h1 {
 .box-price {
     display: flex;
     justify-content: space-between;
+    text-align: center;
     margin-top: 80px; 
 }
 
 .box-price-item {
     background-color: #f5faff;
-    flex-basis: 32%;
-    position: relative;
-    padding: 90 0 96 0;
+    flex-basis: 30%;
+    padding: 50px 0;
 }
 
-.box-price-item-activ {
+.box-price-item.activ {
      background-color: #192b59; 
      color: #fff;
-     flex-basis: 32%;
-    
 }
 
-.box-price-item ul,.box-price-item-activ ul {
+.box-price-item ul {
     list-style-type: none;
     font-size: 14px;
     padding-left: 0;
-    margin-top: 34px;
-    margin-bottom: 59px;
+    margin-top: 30px;
 }
 
 .box-price-item ul>li {
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
 
 .box-price-item h3 {
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: -1px;
     font-weight: 700;
     color: #000958;
+    display: block;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -400,24 +398,25 @@ h1 {
       color: #7b8ab2;
 }
 
-.box-price-item-activ h3 span {
+.box-price-item.activ h3 span {
     font-size: 14px;
     font-weight: 700;
 }
 
-.box-price-item-activ h3 {
+.box-price-item.activ h3 {
     font-size: 50px;
     font-weight: 700;
-    display: block;
+    color: #fff;  
 }
 
-.box-price-item-activ p strong {
+.box-price-item.activ p strong {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #fff;
 }
  
-.box-price-item-activ h3 span:first-child {
+.box-price-item.activ h3 span:first-child {
     color: #fff;
 }
 
