@@ -78,6 +78,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    margin-bottom: 230px;
 }
 
 .logo {
@@ -98,7 +100,7 @@ h1 {
 } 
 
 .nav>li {
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .nav-item {
@@ -144,8 +146,8 @@ h1 {
     color: #fff;
     font-weight: 400;
     background-color: #1085e4;
-    padding: 13px 38px;
-    letter-spacing: 0.2px;
+    padding: 16px 40px;
+    letter-spacing: 0.4px;
 }
 
 .btn-info:hover {
@@ -258,6 +260,13 @@ h1 {
 
 /*PAGE*/
 
+.page-header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 250px;
+}
+
 .page-stat, .page-screen {
     background-color: #edf6ff;
 }
@@ -360,6 +369,7 @@ h1 {
     font-size: 14px;
     padding-left: 0;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .box-price-item ul>li {
