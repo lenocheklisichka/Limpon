@@ -73,6 +73,20 @@ h1 {
     max-width: 1110px;
     margin: 0 auto;
 }
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 181px;
+    height: 49px;
+    background-image: url(../img/logo.png)
+}
+
 .nav{
     font-size: 12px;
     font-weight: 700;
@@ -106,7 +120,7 @@ h1 {
  
 .btn-primary:hover {
     color: #1085e4;
-    background-color: #fff;
+    background-color: transparent;
 }
  
 .btn-secondary {
@@ -132,6 +146,12 @@ h1 {
     background-color: #1085e4;
     padding: 13px 38px;
     letter-spacing: 0.2px;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #94b4cc;
+    border: 1px solid #94b4cc;
 }
 
 .btn-info {
@@ -319,41 +339,69 @@ h1 {
 .box-price {
     display: flex;
     justify-content: space-between;
+    margin-top: 80px; 
 }
 
 .box-price-item {
     background-color: #f5faff;
-    flex-basis: 30%;
+    flex-basis: 32%;
+    position: relative;
+    padding: 90 0 96 0;
 }
 
 .box-price-item-activ {
      background-color: #192b59; 
      color: #fff;
-     flex-basis: 30%;
-     
+     flex-basis: 32%;
+    
 }
 
-.box-price-item ul , .box-price-item-activ ul {
+.box-price-item ul,.box-price-item-activ ul {
     list-style-type: none;
+    font-size: 14px;
     padding-left: 0;
+    margin-top: 34px;
+    margin-bottom: 59px;
 }
 
-.box-price-item h3{
-    font-size: 40px;
+.box-price-item ul>li {
+    margin-bottom: 14px;
+}
+
+.box-price-item h3 {
+    font-size: 50px;
+    letter-spacing: -1px;
     font-weight: 700;
     color: #000958;
-    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.box-price-item h3 span {
+    font-size: 20px;
 }
 
 .box-price-item p strong{
     font-size: 14px;
-    font-weight: 700;
     text-transform: uppercase;
     color: #0084ff;
+    letter-spacing: 3px;
+}
+
+.box-price-item:first-child h3 {
+     margin-bottom: 35px;
+}
+
+.box-price-item h3 span:first-child {
+     color: #000958;
+}
+
+.box-price-item h3 span:last-child {
+      color: #7b8ab2;
 }
 
 .box-price-item-activ h3 span {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -368,10 +416,9 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
 }
-
-.price {
-    font-size: 13px;
-    font-weight: 700;
+ 
+.box-price-item-activ h3 span:first-child {
+    color: #fff;
 }
 
 .page-team h2 span {
