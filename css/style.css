@@ -18,7 +18,7 @@ a {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: -6.6px;
     font-weight: 600;
     color: #192b59;
@@ -78,7 +78,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 40px;
     margin-bottom: 230px;
 }
 
@@ -105,6 +105,17 @@ h1 {
 
 .nav-item {
     color: #6e7ea9;
+}
+
+.screen-img {
+    display: block;
+    background-image: url(../img/header-screen.png);
+    background-repeat: no-repeat;
+    width: 891px;
+    height: 730px;
+    position: absolute;
+    right: 0;
+    top: 150px;
 }
 
 
@@ -172,6 +183,92 @@ h1 {
     margin-left: 15px;
 }
 
+.list-company {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.list-company-item{
+    display: block;
+
+}
+
+.company-one {
+    background-image: url(../img/token.png);
+    flex-basis: 198px;
+    height: 58px;
+
+}
+
+.company-two {
+    background-image: url(../img/magneto.png);
+    flex-basis: 200px; 
+    height: 69px;
+}
+
+.company-three {
+    background-image: url(../img/boohoo.png);
+    flex-basis: 201px;
+    height: 47px;
+}
+
+.company-four {
+    background-image: url(../img/fractal.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                        "d b c" 
+                        "d f g" 
+                        "e f g"
+                        "e h h";
+    max-width: 1110px;   
+    margin: 0 auto;                 
+}
+
+.grid-title {
+    grid-area: a;
+}
+
+.grid-item-1 {
+    grid-area: b;
+}
+
+.grid-item-2 {
+    grid-area: c;
+}
+
+.grid-item-3 {
+    grid-area: d;
+}
+
+.grid-item-4 {
+    grid-area: e;
+}
+
+.grid-item-5 {
+    grid-area: f;
+}
+
+.grid-item-6 {
+    grid-area: g;
+}
+
+.grid-text {
+    grid-area: h;
+}
+
+
+
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
@@ -184,10 +281,16 @@ h1 {
     display: block;
 }
 
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 5px #f4f4f4;
+}
+
 .grid-item h3 {
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
+    margin-bottom: 14px;
 }
 
 .grid-item a {
@@ -196,24 +299,130 @@ h1 {
     color: #1085e4;
 }
 
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block; 
+    margin: 0 auto 20px;
+}
+
+.grid-icon-1 {
+    background-image: url(../img/icon_document.png);
+    width: 73px;
+    height: 79px;
+}
+
+.grid-icon-2 {
+    background-image: url(../img/icon_highly.png);
+    width: 89px;
+    height: 85px;
+}
+
+.grid-icon-3 {
+    background-image: url(../img/icon_mobile.png);
+    width: 82px;
+    height: 82px;
+}
+
+.grid-icon-4 {
+    background-image: url(../img/icon_edit.png);
+    width: 103px;
+    height: 92px;
+}
+
+.grid-icon-5 {
+    background-image: url(../img/icon_design.png);
+    width: 85px;
+    height: 90px;
+}
+
+.grid-icon-6 {
+    background-image: url(../img/icon_support.png);
+    width: 100px;
+    height: 87px;
+}
+
+
+
+
+
+
+
 .uithem {
     font-size: 12px;
     font-weight:500;
     color: #1085e4;
+    display: inline-block;
 }
 
-.subscribe  h2 span  {
+.box-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-subscribe .title-h2 span  {
     font-size: 12px;
     color: #00bffe;
-    font-weight: 600;
     text-transform: uppercase;
     display: block;
 } 
 
-.subscribe h2 {
-    font-size: 50px;
+.page-subscribe .title-h2 {
+    font-size: 35px;
     font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #fff;
 }
+
+.subscribe-text {
+    font-size: 13px;
+    color: #fff;
+    max-width: 437px;
+}
+
+.subscribe-user{
+    position: relative;
+   
+}
+
+.subscribe-child {
+    flex-basis: 39%;
+}
+
+.subscribe-user input {
+    border: 2px solid #3f5cb1;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    display: block;
+    padding: 20px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subscribe-user .btn-primary {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    padding: 12px 40px;
+}
+
+.subscribe-img {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.subscribe-user input:focus, .subscribe-user .btn-primary  {
+    outline: none;
+}
+
+.subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+.subscribe-user input::-moz-placeholder          {color:#b1c3ee;}
+.subscribe-user input:-moz-placeholder           {color:#b1c3ee;}
+.subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
+
 
 .page-software h2 {
     font-size: 50px;
@@ -265,6 +474,14 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 250px;
+    position: relative;
+}
+
+.page-company {
+    background-image: url(../img/background_blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0 70px;
 }
 
 .page-stat, .page-screen {
@@ -278,6 +495,18 @@ h1 {
 .page-screen {
     padding: 116px 0 0 0;
     text-align: center;
+}
+
+.page-subscribe {
+    background: rgba(10,33,145,1);
+    background: -moz-linear-gradient(-45deg, rgba(10,33,145,1) 0%, rgba(35,120,205,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,33,145,1)), color-stop(100%, rgba(35,120,205,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10,33,145,1) 0%, rgba(35,120,205,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10,33,145,1) 0%, rgba(35,120,205,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10,33,145,1) 0%, rgba(35,120,205,1) 100%);
+    background: linear-gradient(135deg, rgba(10,33,145,1) 0%, rgba(35,120,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2191', endColorstr='#2378cd', GradientType=1 );
+    
 }
 
 .page-plan {
