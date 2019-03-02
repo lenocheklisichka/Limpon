@@ -129,6 +129,7 @@ h1 {
     border: 1px solid #1085e4;
     padding: 15px 48px;
     border-radius: 30px;
+    transition: 0.3s;
 }
  
 .btn-primary:hover {
@@ -146,6 +147,7 @@ h1 {
     border: 1px solid #cbdbe8;
     padding: 17px 39px;
     border-radius: 30px;
+    transition: 0.3s;
 }
  
 .btn-secondary:hover {
@@ -177,6 +179,7 @@ h1 {
     text-transform: uppercase;
     padding: 14px 50px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 
 .btn-group a + a {
@@ -232,8 +235,11 @@ h1 {
                          "d f g" 
                          "e f g"
                          "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;                  
     max-width: 1110px;   
-    margin: 0 auto;                 
+    margin: 0 auto;  
+    padding: 114px 0 120px 0;            
 }
 
 .grid-title {
@@ -268,8 +274,6 @@ h1 {
     grid-area: h;
 }
 
-
-
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
@@ -284,7 +288,7 @@ h1 {
 
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 5px #f4f4f4;
+    box-shadow: 0 3px 3px 3px #f4f4f4;
 }
 
 .grid-item h3 {
@@ -304,6 +308,7 @@ h1 {
     background-repeat: no-repeat;
     display: block; 
     margin: 0 auto 20px;
+    background-position: center;
 }
 
 .grid-icon-1 {
@@ -341,12 +346,6 @@ h1 {
     width: 100px;
     height: 87px;
 }
-
-
-
-
-
-
 
 .uithem {
     font-size: 12px;
