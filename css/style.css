@@ -224,13 +224,14 @@ h1 {
     height: 69px;
 }
 
-.grid {
+
+.page-grid {
     display: grid;
     grid-template-areas: "a b c"
-                        "d b c" 
-                        "d f g" 
-                        "e f g"
-                        "e h h";
+                         "d b c" 
+                         "d f g" 
+                         "e f g"
+                         "e h h";
     max-width: 1110px;   
     margin: 0 auto;                 
 }
