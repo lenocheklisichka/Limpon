@@ -445,8 +445,8 @@ h1 {
     margin-right: 30px;
 }
 
-::-webkit-scrollbar { height: 312px; width: 4px; background-color: #f3f6ff;}
-::-webkit-scrollbar-thumb { height: 15px; width: 4px; background-color: #1085e4; }
+::-webkit-scrollbar { height: 312px; width: 4px; background-color: #f3f6ff; border-radius: 2px;}
+::-webkit-scrollbar-thumb { height: 15px; width: 4px; background-color: #1085e4; border-radius: 2px; }
 
 .page-software-icon {
     display: block;
