@@ -560,6 +560,7 @@ h1 {
 }
 
 .page-plan {
+    margin-top: 80px;
     text-align: center;
     
 }
@@ -680,11 +681,11 @@ a.video-app {
     z-index: -1;
 }
  
-.page-clients .title-40 {
+.page-clients .title-40, .page-team .title-40{
     color: #fff;
 }
 
-.page-clients .title-40 span {
+.page-clients .title-40 span, .page-team .title-40 span {
     color: #85c8ff;
 }
 
@@ -701,7 +702,7 @@ a.video-app {
     border-radius: 10px;
     flex-basis: 30%;
     box-sizing: border-box;
-    box-shadow: 0 3px 3px 3px #f4f4f4; 
+    box-shadow: 0 3px 3px  #f4f4f4; 
 }
 
 .clients-item>p {
@@ -838,32 +839,133 @@ a.video-app {
     color: #fff;
 }
 
-.page-team h2 span {
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-    color: #85c8ff;
+.page-team {
     text-align: center;
+    background-image: url(../img/bg_team.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 117px 0 30px 0;
 }
 
-.angels {
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 32%;
+    box-shadow: 0 3px 3px  #f4f4f4; 
+    position: relative;
+    padding: 180px 0 40px 0;
+}
+
+.box-team-item .avatar {
+     position: absolute;
+     top: -90px;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+}
+
+.box-team-item .position {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
     color: #1a88e1;
     text-transform: uppercase;
     display: block;
+    margin-bottom: 0;
+    letter-spacing: 2px;
 }
 
-.team {
+.box-team-item .name {
     font-size: 26px;
     font-weight: 600;
     color: #192b59;
     display: block;
-} 
+    margin-top: 10px;
+    letter-spacing: -1px; 
+}
 
-.card {
-    font-size: 50px;
-    font-weight: 600;
-    color: #192b59;
+.box-team-item .btm-team {
+     background-color: #f3f3f3;
+     border-radius: 100%;
+     display: block;
+     width: 50px;
+     height: 50px;
+     margin: 0 auto;
+     border: none;
+}
+
+.box-team-item .btm-team:hover{
+    background-color: #1a88e1;
+}
+
+.box-team-item .btn-team span {
+    background-image: url(../img/btn_team.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+}
+
+.box-team-item .btn-more span {
+    background-position: -1px -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.box-team-item .btm-more:hover span {
+     background-position: -1px -3px;
+
+}
+ 
+.box-team-item .btn-more :focus {
+    outline: none;
+}
+
+.social-team {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.box-team-item .btn-fb span {
+    background-position: -1px -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.box-team-item .btn-fb:hover span {
+
+}
+
+box-team-item .btn-tw span {
+    background-position: -1px -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.box-team-item .btn-tw:hover span {
+    
+}
+
+box-team-item .btn-be span {
+    background-position: -1px -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.box-team-item .btn-be:hover span {
+    
+}
+
+box-team-item .btn-web span {
+    background-position: -1px -3px;
+    width: 20px;
+    height: 20px;
+}
+
+.box-team-item .btn-web:hover span {
+    
 }
