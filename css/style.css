@@ -1122,11 +1122,7 @@ a.video-app {
 .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {color:#8995b3;}
  
 .footer {
-    background-image: url(../img/bg_footer.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 67px; 
+    background-color: #192b59;
 }
 
 .footer-flex {
@@ -1142,21 +1138,22 @@ a.video-app {
 
 .footer-flex a {
     color: #1085e4;
+    text-transform: uppercase;
 }
 
 .social {
     display: flex;
-    padding: 0;
     list-style-type: none;
-    justify-content: space-around;
-    margin: 0;
+    align-items: center;
 }
 
 .social-facebook {
     background-image: url(../img/icon_facebook.png);
     background-repeat: no-repeat;
+    background-position: right; 
     width: 17px;
     height: 16px;
+    padding-top: 27px;
 }
 
 .social-twitter {
@@ -1164,27 +1161,31 @@ a.video-app {
     background-repeat: no-repeat;
     width: 15px;
     height: 14px;
+    padding-top: 27px;
 }
 
 .social-behance {
-    background-image: url(../img/behance.png);
+    background-image: url(../img/icon_behance.png);
     background-repeat: no-repeat;
     width: 18px;
     height: 10px;
+    padding-top: 27px;
 } 
 
 .social-pinterest  {
-    background-image: url(../img/pinterest.png);
+    background-image: url(../img/icon_pinterest.png);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
+    padding-top: 27px;
 } 
 
 .social-foursquare {
-    background-image: url(../img/foursquare.png);
+    background-image: url(../img/icon_foursquare.png);
     background-repeat: no-repeat;
     width: 11px;
     height: 16px;
+    padding-top: 27px;
 } 
 
 .social>li {
