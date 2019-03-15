@@ -35,6 +35,28 @@
                     <li><a href="" class="nav-item">Team</a></li>
                     <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
                  </ul> 
+                 <button class="btn-menu" type="button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+               <g>
+                   <g>
+                       <path d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+                           c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z"/>
+                   </g>
+               </g>
+               <g>
+                   <g>
+                       <path d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+                           c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z"/>
+                   </g>
+               </g>
+               <g>
+                   <g>
+                       <path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+                           c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z"/>
+                   </g>
+               </g>
+               </svg>
+               </button>
         </div>
         
        <div class="wrap">
@@ -49,10 +71,10 @@
 
     <div class="page-company">
         <ul class="list-company">
-           <li class="list-company-item company-one"></li>
-           <li class="list-company-item company-two"></li>
-           <li class="list-company-item company-three"></li>
-           <li class="list-company-item company-four"></li>
+           <li class="list-company-item company-one"><span></span></li>
+           <li class="list-company-item company-two"><span></span></li>
+           <li class="list-company-item company-three"><span></span></li>
+           <li class="list-company-item company-four"><span></span></li>
         </ul>
     </div>
      
@@ -358,17 +380,30 @@
    </div>
 
    <div class="footer">
-        <div class=" wrap footer-flex">
+        <div class="wrap footer-flex">
           <p>Made With Love & Copyright By -<a href="">limpon</a></p>
           <ul class="social">
-             <li><a class="social-link social-facebook" href="" target="_blank"></a></li>
-             <li><a class="social-link social-twitter"href="" target="_blank"></a></li>
-             <li><a class="social-link social-behance" href="" target="_blank"></a></li>
-             <li><a class="social-link social-pinterest"href="" target="_blank"></a></li>
-             <li><a class="social-link social-foursquare" href="" target="_blank"></a></li>
+             <li><a class="social-link social-facebook" href="" target="_blank">f</a></li>
+             <li><a class="social-link social-twitter"href="" target="_blank">t</a></li>
+             <li><a class="social-link social-behance" href="" target="_blank">b</a></li>
+             <li><a class="social-link social-pinterest"href="" target="_blank">p</a></li>
+             <li><a class="social-link social-foursquare" href="" target="_blank">f</a></li>
           </ul>
         </div>
    </div>
+
+   <div class="modal">
+       <button class="btn-close" type="button"><span>&times;</span></button>
+    <ul class="nav-modal">
+       <li><a href="" class="nav-item">Home</a></li>
+       <li><a href="" class="nav-item">Features</a></li>
+       <li><a href="" class="nav-item">Video</a></li> 
+       <li><a href="" class="nav-item">Screens</a></li>
+       <li><a href="" class="nav-item">Pricing</a></li>
+       <li><a href="" class="nav-item">Team</a></li>
+       <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
+    </ul> 
+ </div>
 
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
        crossorigin="anonymous"></script>
@@ -386,7 +421,13 @@
             $(".btn-thomas").hide()
             $(".social-thomas").fadeIn();
           });
+           $(".btn-menu").click(function(){
+           $(".modal").show()
         });
+           $(".btn-close").click(function(){
+           $(".modal").hide()
+      });
+    }); 
    </script>
 
 </body> 
