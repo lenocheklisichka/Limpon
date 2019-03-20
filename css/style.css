@@ -564,12 +564,6 @@ h1 {
     position: absolute;
 }
 
-.page-analytics .title-h2 {
-    max-width: 560px ;
-    margin-top: 12px;
-    margin-bottom: 26px;
-}
-
 .page-software .title-h2 {
     max-width: 530px;
     margin-top: 12px;
@@ -807,6 +801,12 @@ a.video-app {
     right: -80px;
 }
 
+.page-analytics {
+    background: url(../img/bg.png) no-repeat left bottom #edf6ff;
+    background-size: auto 100%;
+    padding: 50px 0 70px 0;
+}
+
 .flex-analytics {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -818,20 +818,20 @@ a.video-app {
         -ms-flex-align: center;
             align-items: center;
 }
-
-.page-analytics {
-    background: url(../img/bg.png) no-repeat left bottom #edf6ff;
-    background-size: auto 100%;
-    padding: 50px 0 100px 0;
-}
-
 .flex-analytics>div {
     -ms-flex-preferred-size: 53%;
         flex-basis: 53%;
 }
 
+.flex-analytics .title-h2 {
+    max-width: 530px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
 .page-analytics-text {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    width: 75%; 
 }
 
 .page-content {
@@ -892,6 +892,7 @@ a.video-app {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+            flex-wrap: wrap;
 }
 
 .clients-item {
@@ -1364,49 +1365,67 @@ a.video-app {
             align-items: center;
 }
 
-.social-facebook span {
-    background-image: url(../img/icon_facebook.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-
-.social-twitter span {
-    background-image: url(../img/icon_twitter.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-}
-
-.social-behance span {
-    background-image: url(../img/icon_behance.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-} 
-
-.social-pinterest span {
-    background-image: url(../img/icon_pinterest.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-} 
-
-.social-foursquare span {
-    background-image: url(../img/icon_foursquare.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-} 
-
-.social>li {
-    margin-left: 23px;
-}
-
 .social-link {
     display: inline-block;
 }
 
-.social-link span:hover {
-    color: #1085e4;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+.social-facebook {
+    background: url(../img/icon_facebook.png) no-repeat center;
+    width: 17px;
+    height: 16px;
+    transition: background-image .2s ease-in-out;
+}
+
+.social-twitter {
+    background: url(../img/icon_twitter.png) no-repeat center;
+    width: 15px;
+    height: 14px;
+    transition: background-image .2s ease-in-out;
+}
+
+.social-behance {
+    background: url(../img/icon_behance.png) no-repeat center;
+    width: 18px;
+    height: 10px;
+    transition: background-image .2s ease-in-out;
+}
+
+.social-pinterest {
+    background: url(../img/icon_pinterest.png) no-repeat center;
+    width: 15px;
+    height: 15px;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.social-foursquare {
+    background: url(../img/icon_foursquare.png) no-repeat center;
+    width: 11px;
+    height: 16px;
+    transition: background-image .2s ease-in-out;
+}
+
+.social-facebook:hover {
+    background-image: url(../img/icon_facebook_h.png);
+}
+ 
+.social-twitter:hover {
+    background-image: url(../img/icon_twitter_h.png);
+}
+
+.social-behance:hover {
+    background-image: url(../img/icon_behance_h.png);
+}
+
+.social-pinterest:hover {
+    background-image: url(../img/icon_pinterest_h.png);
+}
+
+.social-foursquare:hover {
+    background-image: url(../img/icon_foursquare_h.png);
+}
+
+.social>li+li {
+    margin-left: 23px;
 }
 
  /* MEDIA */
@@ -1427,11 +1446,20 @@ a.video-app {
     .video-app img {
         width: 482px;
     }
+
+    .flex-analytics {
+    
+    }
+
+    .flex-analytics>div {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width:1300px) {
     .page-software {
-
+        padding: 60px 0;
     }
     
     .page-software-flex {
@@ -1443,8 +1471,10 @@ a.video-app {
     }
     
     .page-software-list {
-    
-   }
+        max-width: 800px;
+        margin-right: 50px;
+        height: 266px;
+    }
 } 
 
 @media (max-width:1295px) {
@@ -1561,7 +1591,20 @@ a.video-app {
         margin-bottom: 20px;
     }
 
+    .wrap {
+        width: 100%;
+        text-align: center;
+    }
 
+    .box-clients {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .clients-item {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width:800px) {
