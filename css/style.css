@@ -802,18 +802,18 @@ a.video-app {
 }
 
 .page-analytics {
-    background: url(../img/bg.png) no-repeat left bottom #edf6ff;
-    background-size: auto 100%;
-    padding: 50px 0 70px 0;
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    padding: 60px 0 80px 0;
 }
 
 .flex-analytics {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -830,8 +830,7 @@ a.video-app {
 }
 
 .page-analytics-text {
-    margin-bottom: 40px;
-    width: 75%; 
+    margin-bottom: 50px;
 }
 
 .page-content {
@@ -1386,7 +1385,7 @@ a.video-app {
 .social-behance {
     background: url(../img/icon_behance.png) no-repeat center;
     width: 18px;
-    height: 10px;
+    height: 14px;
     transition: background-image .2s ease-in-out;
 }
 
@@ -1443,17 +1442,9 @@ a.video-app {
         top: -360px;
         right: 0;
     }
+
     .video-app img {
         width: 482px;
-    }
-
-    .flex-analytics {
-    
-    }
-
-    .flex-analytics>div {
-        width: 100%;
-        text-align: center;
     }
 }
 
@@ -1551,7 +1542,7 @@ a.video-app {
     }
 
     .page-header {
-        padding: 53px 0 150px 0;
+        padding: 10px 0 150px 0;
     }
 
     .content-app {
@@ -1575,6 +1566,20 @@ a.video-app {
    .page-app {
        padding: 380px 0 82px 0;
    }
+
+   .flex-analytics img {
+       display: none;
+   }
+
+   .flex-analytics>div {
+      width: 100%;
+      text-align: center;
+   }
+
+    .page-analytics {
+       
+   }
+}
 
 @media (max-width:930px) {
     .intro {
