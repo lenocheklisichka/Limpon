@@ -10,7 +10,7 @@ li {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #7581a1;
-    line-height: 26px;
+    line-height: 22px;
 }
 
 a {
@@ -32,7 +32,7 @@ h1 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -1.3px;
 }
  
@@ -551,42 +551,34 @@ h1 {
 .subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
 
 .page-software {
-    padding: 50px 0 ;
-    position: relative;
-    overflow: hidden;
-    background: url(../img/bg_comp.png) no-repeat left bottom;
-    background-size: 45% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .software-comp {
-    display: block;
-    background-image: url(../img/bg_comp.png);
-    position: absolute;
+   width: 70%;
+   flex-direction: column;
+}
+
+.software-comp img {
+    max-width: 100%;
 }
 
 .page-software .title-h2 {
     max-width: 530px;
-    margin-top: 12px;
-    margin-bottom: 26px;
-}
-
-.page-software-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-}
+    margin-top: 10px;
+    margin-bottom: 24px;
+}    
 
 .page-software-flex>div {
-    -ms-flex-preferred-size: 58%;
-        flex-basis: 55%;
+    padding: 100px 0 20px 0; 
+    width: 80%; 
 }
 
 .page-software-list {
-    margin-top: 20px;
-    height: 320px;
+    margin-top: 23px;
+    height: 250px;
     overflow: hidden;
     overflow-y: scroll;
     margin-right: 20px;
@@ -605,7 +597,7 @@ h1 {
     -webkit-box-shadow: 0px 0px 16px 0px rgba(16,133,228,0.4);
             box-shadow: 0px 0px 16px 0px rgba(16,133,228,0.4);
     border-radius: 4px;
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
 }
 
 .page-software-list dt {
@@ -618,7 +610,7 @@ h1 {
 .page-software-list dd {
     font-size: 14px;
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     line-height: 1.5;
 }
 
@@ -882,6 +874,7 @@ a.video-app {
 
 .page-clients .title-40 span, .page-team .title-40 span {
     color: #85c8ff;
+    margin-bottom: 10px;
 }
 
 .box-clients {
@@ -1058,7 +1051,7 @@ a.video-app {
     background-image: url(../img/bg_team.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 117px 0 109px 0;
+    padding: 190px 0 90px 0;
 }
 
 .box-team {
@@ -1068,7 +1061,8 @@ a.video-app {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 150px;
+    margin-top: 120px;
+    flex-wrap: wrap;
 }
 
 .box-team-item {
@@ -1439,36 +1433,30 @@ a.video-app {
 
 @media (max-width:1440px) {
     .video-app  { 
-        top: -360px;
+        top: 0;
         right: 0;
     }
 
     .video-app img {
         width: 482px;
     }
+
+    .page-analytics {
+        flex-direction: column;
+    }
+
+    .flex-analytics img {
+        display: block;
+        margin: 0 auto;
+    }
+ 
+    .flex-analytics>div {
+       width: 100%;
+       text-align: center;
+    }
 }
 
 @media (max-width:1300px) {
-    .page-software {
-        padding: 60px 0;
-    }
-    
-    .page-software-flex {
-        justify-content: center;
-    }
-    
-    .page-software-flex>div {
-        flex-basis: 100%;
-    }
-    
-    .page-software-list {
-        max-width: 800px;
-        margin-right: 50px;
-        height: 266px;
-    }
-} 
-
-@media (max-width:1295px) {
     .list-company-item {
         flex-basis: 25%;
         margin-bottom: 50px;
@@ -1549,7 +1537,31 @@ a.video-app {
         width: 100%;
         text-align: center;
    }
+    
+   .page-software {
+        flex-direction: column;
+   }
 
+   .software-comp {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .page-software-flex>div {
+        width: 100%;
+        text-align: center;
+   } 
+
+    .page-software .title-h2 {
+        text-align: center;
+        margin: 0 auto;
+   }
+
+   .setings-icon {
+        margin: 0 auto;
+        margin-bottom: 20px;
+   }
+ 
     .video-app {
        top: -360px;
        right: 0;
@@ -1567,18 +1579,25 @@ a.video-app {
        padding: 380px 0 82px 0;
    }
 
-   .flex-analytics img {
-       display: none;
-   }
+    .box-team {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
-   .flex-analytics>div {
-      width: 100%;
-      text-align: center;
-   }
+    .box-team-item {
+        flex-basis: 100%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
 
-    .page-analytics {
-       
-   }
+   .wrap {
+        width: 100%;
+        text-align: center
+    }
+
+    .page-team {
+        padding: 1200px 0 100px 0;
+    }
 }
 
 @media (max-width:930px) {
