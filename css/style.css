@@ -845,12 +845,6 @@ a.video-app {
             align-items: center;
 }
 
-.graf-app {
-    position: absolute;
-    left: 620px;
-    top: 60px;
-}
-
 .page-clients {
     position: relative; 
     margin-top: 120px;
@@ -1147,7 +1141,7 @@ a.video-app {
 }
 
 .box-team-item .btn-more:hover span {
-    background-position: -2px -18px;
+    background-position: 2px -18px;
 }
 
 .box-team-item .btn-more span {
@@ -1437,6 +1431,7 @@ a.video-app {
         height: 571px;
         top: 258px;
     }
+}
 
 @media (max-width:1440px) {
     .video-app  { 
@@ -1450,12 +1445,15 @@ a.video-app {
 
     .page-analytics {
           flex-wrap: wrap;
+          background-position: center;
     }
 
     .flex-analytics img {
         display: block;
         margin: 0 auto;
         width: 100%;
+        max-width: 500px;
+        margin-top: 50px;
     }
  
     .flex-analytics>div {
@@ -1463,6 +1461,25 @@ a.video-app {
        text-align: center;
        margin: 0 auto;
     }
+
+    .flex-analytics {
+        flex-direction: column-reverse;
+    }
+
+    .setings-icon {
+        margin: 0 auto;
+    }
+
+    .flex-analytics .title-h2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .page-analytics-text {
+        max-width: 500px;
+        margin: 14px auto 50px;
+    }
+
 }
 
 @media (max-width:1300px) {
@@ -1571,7 +1588,7 @@ a.video-app {
         margin-bottom: 20px;
    }
  
-    .video-app {
+    a.video-app {
        top: -360px;
        right: 0;
        left: 0;
@@ -1606,7 +1623,8 @@ a.video-app {
 
     .page-team {
         flex-direction: column;
-        padding: 1200px 0 100px 0;
+        padding: 20px 0;
+        background-position: top;
     }
 
     .page-form {
@@ -1628,6 +1646,14 @@ a.video-app {
         width: 100%;
         text-align: center;
         margin-top: 30px;
+    }
+
+    .contact-form .btn-primary {
+        margin: 0 auto;
+    }
+
+    .wrap .flex-app {
+        flex-direction: column;
     }
 
 }
