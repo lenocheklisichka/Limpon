@@ -29,7 +29,6 @@ h1 {
 }
 
 .title-h2 {
-    font-size: 50px;
     font-weight: 600;
     color: #192b59;
     line-height: 1.1;
@@ -47,7 +46,7 @@ h1 {
 }
 
 .title-40 {
-    font-size: 40px;
+    font-size: 38px;
     letter-spacing: -3.4px; 
     font-weight: 500;
     color: #192b59;
@@ -494,7 +493,7 @@ h1 {
 } 
 
 .page-subscribe .title-h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 25px;
@@ -566,6 +565,7 @@ h1 {
 }
 
 .page-software .title-h2 {
+    font-size: 47px;
     max-width: 530px;
     margin-top: 10px;
     margin-bottom: 24px;
@@ -744,6 +744,7 @@ h1 {
 }
  
 .content-app .title-h2 {
+     font-size: 40px;
      margin-bottom: 36px;
 }
 
@@ -789,14 +790,14 @@ h1 {
 
 a.video-app {
     position: absolute;
-    top: -60px;
+    top: -75px;
     right: -80px;
 }
 
 .page-analytics {
     background: url(../img/bg.png) no-repeat;
     background-size: cover;
-    padding: 60px 0 80px 0;
+    padding: 80px 0 90px 0;
 }
 
 .flex-analytics {
@@ -809,13 +810,15 @@ a.video-app {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            flex-wrap: wrap;
 }
 .flex-analytics>div {
-    -ms-flex-preferred-size: 53%;
-        flex-basis: 53%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
 }
 
 .flex-analytics .title-h2 {
+    font-size: 40px;
     max-width: 530px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -940,7 +943,7 @@ a.video-app {
 }
 
 .page-plan h2 {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 600;
     color: #192b59;
     text-align: center;
@@ -1210,6 +1213,10 @@ a.video-app {
     margin-right: 70px;
 }
 
+.flex-form .title-h2 {
+     font-size: 40px;
+}
+
 .flex-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1291,8 +1298,8 @@ a.video-app {
 .contact-form input, .contact-form textarea {
     font-size: 14px;
     border: 2px solid #dce4ec;
-    padding: 25px 70px 25px 30px;
-    border-radius: 35px;
+    padding: 20px 70px 20px 30px;
+    border-radius: 40px;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1442,17 +1449,19 @@ a.video-app {
     }
 
     .page-analytics {
-        flex-direction: column;
+          flex-wrap: wrap;
     }
 
     .flex-analytics img {
         display: block;
         margin: 0 auto;
+        width: 100%;
     }
  
     .flex-analytics>div {
        width: 100%;
        text-align: center;
+       margin: 0 auto;
     }
 }
 
@@ -1596,8 +1605,31 @@ a.video-app {
     }
 
     .page-team {
+        flex-direction: column;
         padding: 1200px 0 100px 0;
     }
+
+    .page-form {
+        padding: 100px 0 80px 0;
+    }
+
+    .flex-form {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+    }
+    
+    .flex-form .title-h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contact-form {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width:930px) {
@@ -1632,11 +1664,12 @@ a.video-app {
 }
 
 @media (max-width:800px) {
-    .grid h2 {
+    .grid-title .title-40 {
         text-align: center;
+        margin: 0 auto 50px;
     }
         
-    .grid h2 span {
+    .grid-title .title-40 span {
         margin-bottom: 10px;
     }
  
