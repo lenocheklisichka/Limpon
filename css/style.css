@@ -1480,6 +1480,42 @@ a.video-app {
         margin: 14px auto 50px;
     }
 
+    .page-content {
+
+    }
+
+    .flex-app {
+        flex-direction: column;
+    }
+
+    .content-app {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .flex-app .title-h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .flex-app img {
+        display: block;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .page-content-text {
+        max-width: 500px;
+        margin: 15px auto 40px; 
+    }
+
+    .setings-icon {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width:1300px) {
@@ -1698,6 +1734,7 @@ a.video-app {
     .grid-title .title-40 span {
         margin-bottom: 10px;
     }
+}
  
 @media (max-width:700px) {
     .list-stat>li {
@@ -1730,5 +1767,25 @@ a.video-app {
        
     .btn-group a {
         margin-bottom: 10px;
+    }
+
+    .footer {
+        padding: 20px 0 20px 0;
+    }
+
+    .footer-flex {
+        flex-wrap: wrap;
+    }
+
+    .footer-flex p {
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .social {
+        margin-top: 30px;
+        margin: 0 auto;
+        text-align: center;
     }
 }
