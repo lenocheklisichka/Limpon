@@ -1691,7 +1691,6 @@ a.video-app {
     .wrap .flex-app {
         flex-direction: column;
     }
-
 }
 
 @media (max-width:930px) {
@@ -1780,7 +1779,6 @@ a.video-app {
     .footer-flex p {
         text-align: center;
         margin: 0 auto;
-
     }
 
     .social {
